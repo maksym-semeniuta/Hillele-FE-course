@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selection</title>
+</head>
+<body>
+    <h1>Select your car</h1>
+    <form oninput="result.value = slider.value" target="_blank">
+        <label><b>Car name</b></label>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+          <br>
+          <label><b>Body type</b></label>
+          <select name="body">
+            <option value="Sedan">Sedan</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Suv">SUV</option>
+          </select>
+          <br>
+          <Label><b>Country</b></Label>
+          <select name="country">
+            <option value="Sweden">Sweden</option>
+            <option value="Italy">Italy</option>
+            <option value="Germany">Germany</option>
+          </select>
+          <br>
+          <label><b>Year</b></label>
+          <input type="date" min="1980-01-01">
+          <input type="date" max="2023-31-12">
+          <br>
+          <label><b>Price</b></label>
+          <input type="range" id="slider" name="slider" min="0" max="10000">
+          The price is up to <output name="result" for="slider"></output> $
+          <br>
+          <label><b>Condition</b></label>
+          <br>
+          <input type="checkbox" name="run and drive" value="run and drive "> Run and Drive
+          <input type="checkbox" name="hit" value="hit "> After accident
+          <input type="checkbox" name="drowned" value="drowned "> Drowned
+          <br>
+          <label><b>Fuel type</b></Label>
+          <select>
+            <option value="gas">Gas</option>
+            <option value="diesel">Diesel</option>
+          </select>
+          <br>
+          <label><b>Gearbox type</b></label>
+          <select>
+            <option value="manual">Manual</option>
+            <option value="auto">Auto</option>
+          </select>
+          <br>
+          <label><b>Color</b></label>
+          <input type="color">
+          <br>
+          <label><b>Complectation</b></label>
+          <input type="checkbox" name="lux" value="lux"> Lux
+          <input type="checkbox" name="sport" value="sport"> Sport
+          <input type="checkbox" name="classic" value="classic"> Classic
+          <br>
+          <button type="submit" formaction="https://auto.ria.com/uk/">Search</button> <!--Autoria it's a joke-->
+          <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

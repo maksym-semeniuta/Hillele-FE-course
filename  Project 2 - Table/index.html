@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+td {
+  text-align: center;
+}
+#td1, #td2, #td3 {
+    background-color: blue;
+}
+#td4, #tr3, #tr4, #tr5 {
+    background-color: yellow;
+}
+    </style>
+    <title>Table</title>
+</head>
+<body>
+    <table style="width: 50%;">
+        <tbody>
+        <tr >
+            <td id="td1" colspan="4">MY FIRST TABLE</td>
+        </tr>
+        <tr>
+            <td id="td2">First sell</td>
+            <td id="td3">Second sell</td>
+            <td colspan="2" rowspan="3" id="td4">6 sells merged togather</td>
+        </tr>
+        <tr id="tr3">
+            <td colspan="2">2 sells merged into one</td>
+        </tr>
+        <tr id="tr4">
+            <td>1st sell
+                <p>3rd row</p>
+            </td>
+            <td>2nd sell
+                <p>3rd row</p>
+            </td>
+        </tr>
+        <tr id="tr5">
+            <td colspan="4"> Do you like tables?</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
