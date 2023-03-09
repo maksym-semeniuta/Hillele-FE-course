@@ -1,0 +1,549 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.navigationMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.headerMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 500px;
+}
+
+.headerMenu > li {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.headerButtons {
+  display: flex;
+  align-items: center;
+}
+.headerButtons .headerButtonsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.headerButtons .headerButtonsList .headerButtonsList__logIn {
+  padding: 1px 26px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 5px;
+}
+.headerButtons .headerButtonsList .headerButtonsList__try {
+  padding: 2px 16px;
+  background-color: #FF6336;
+  border-radius: 0px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.acceleration {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-auto-rows: auto;
+  padding: 80px 40px;
+}
+.acceleration h2 {
+  grid-column: 1/2;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  color: #000000;
+  padding-bottom: 40px;
+}
+.acceleration img {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  width: 100%;
+}
+.acceleration p {
+  grid-column: 1/2;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+.acceleration .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding-bottom: 20px;
+}
+.acceleration .list .accelerationButtons__try {
+  border-radius: 0px;
+  background-color: #FF6336;
+  border: none;
+  padding: 0 30px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.acceleration .list .accelerationButtons__book {
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 17px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 59px;
+  text-align: center;
+  color: #000000;
+}
+.acceleration .acceleration--low {
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 0px;
+}
+
+.partners {
+  display: grid;
+  background: #FF9C7D;
+  grid-template-columns: 6fr;
+}
+.partners h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  padding: 50px 150px;
+}
+.partners .pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.options {
+  padding: 80px 40px;
+}
+
+.card1, .card2, .card3, .card4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.card2, .card4 {
+  flex-direction: row-reverse;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+}
+.card h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+}
+.card p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.card a {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.localizationExm {
+  padding: 80px 40px;
+  background: #FFF8E4;
+}
+.localizationExm h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.localizationExm .exm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 4em;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+}
+.localizationExm .exm .examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.localizationExm .exm .examples h2 {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 0px;
+}
+.localizationExm .exm .examples p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+.localizationExm .exm .examples img {
+  width: 160px;
+}
+
+.team {
+  padding: 80px 40px;
+}
+.team h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.team .teamGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+}
+.team .teamGroup .teamEx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.team .teamGroup .teamEx h2 {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 0px;
+}
+.team .teamGroup .teamEx p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+  color: #000000;
+}
+.team .teamGroup .teamEx img {
+  width: 160px;
+  height: auto;
+}
+.team .teamGroup .teamEx a {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.testimonials {
+  background: #C9E8F2;
+  padding: 60px 40px;
+  display: flex;
+}
+.testimonials .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.testimonials .text p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+.testimonials .text .name {
+  font-size: 15px;
+  line-height: 20px;
+}
+.testimonials .text img {
+  width: 120px;
+}
+
+.mostLoved {
+  padding: 80px 40px;
+  background: #DABC98;
+  display: flex;
+}
+.mostLoved .logo1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 3%;
+  align-items: center;
+}
+.mostLoved .logo1 h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+.mostLoved .logo2, .mostLoved .logo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mostLoved .logo2 img, .mostLoved .logo3 img {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding-right: 50px;
+}
+.mostLoved .logo2 p, .mostLoved .logo3 p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.mostLoved .logo2 {
+  border-left: 1px solid black;
+  padding-left: 30px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 40px;
+}
+.tools h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 75px;
+  color: #000000;
+}
+.tools p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  width: 50%;
+  text-align: center;
+}
+.tools button {
+  border-radius: 0px;
+  background: #FF6336;
+  color: #FFFFFF;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0px 20px;
+  border: none;
+}
+
+.try {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 40px;
+  background: #FF9C7D;
+}
+.try h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 75px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.try p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.try button {
+  border-radius: 0px;
+  background: black;
+  color: #FFFFFF;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0px 40px;
+  border: none;
+}
+
+.footerMenu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 80px 40px;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+}
+.footerMenu .case {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footerMenu .case h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footerMenu .case img {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding-bottom: 20px;
+}
+.footerMenu .case p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.footerMenu .case a {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+.footerMenu .menu h2 {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.footerMenu .menu .list {
+  display: flex;
+  flex-direction: column;
+}
+.footerMenu .menu li {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 40px;
+  border-top: 1px solid black;
+  justify-content: space-between;
+}
+.footer .logo {
+  display: flex;
+  gap: 2%;
+}
+.footer .logo img {
+  width: 90px;
+  height: 20px;
+}
+.footer .logo p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.footer .rights {
+  display: flex;
+  flex-direction: column;
+}
+.footer .rights p {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */
