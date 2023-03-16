@@ -1,0 +1,278 @@
+.mainSection {
+  background: no-repeat url("../Images/derek-thomson-TWoL-QCZubY-unsplash 4.png");
+  background-size: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerNav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+}
+.headerNav__h {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.headerNav__nav li {
+  color: #FFFFFF;
+}
+.headerNav__social svg {
+  fill: #FFFFFF;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav ul li:not(:last-child) {
+  padding-right: 15px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+}
+.social ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+.language svg {
+  fill: #FFFFFF;
+}
+
+.promoConteiner {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.promoConteiner .promo {
+  max-width: 757px;
+  min-height: 200px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.promoConteiner .promo__title {
+  color: #FFFFFF;
+}
+.promoConteiner .promo__subtitle {
+  color: #FFFFFF;
+}
+.promoConteiner .promo__button {
+  color: #FFFFFF;
+  padding: 10px 40px;
+}
+
+.title {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: none;
+  background: #1ED400;
+}
+
+.aboutUs {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs__h {
+  color: black;
+}
+
+h2 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333333;
+  text-align: center;
+}
+
+.conteiner {
+  padding: 40px 40px;
+  width: 100%;
+}
+.conteiner ul {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.conteiner ul li {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.conteiner__h2 {
+  color: #1ED400;
+  font-size: 90px;
+  line-height: 150px;
+  text-align: center;
+}
+.conteiner svg {
+  position: absolute;
+}
+
+.trip {
+  background: no-repeat url("../Images/ken-cheung-VbLTNceBTFE-unsplash 1.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 300px;
+  padding: 20px 100px;
+}
+.trip__subtitle {
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 35px;
+}
+.trip__title {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 60px;
+}
+.trip__discription {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 32px;
+}
+.trip__discount {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 32px;
+}
+.trip__button {
+  color: #FFFFFF;
+  padding: 10px 30px;
+}
+
+.popWays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  padding: 40px 40px;
+}
+.popWays ul {
+  display: flex;
+  gap: 3%;
+}
+.popWays ul img {
+  max-width: 250px;
+}
+.popWays__title {
+  font-size: 50px;
+  line-height: 60px;
+}
+.popWays__discription {
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+}
+
+.travel {
+  background: no-repeat url(../Images/background.png);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.travel__title {
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.travel ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+.travel ul img {
+  max-width: 250px;
+}
+
+.footerNav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background: url(../Images/imgMountains\ 1.png);
+  background-size: 100%;
+  align-items: center;
+}
+.footerNav__h {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: black;
+}
+.footerNav__nav li {
+  color: black;
+}
+.footerNav__social svg {
+  fill: black;
+}/*# sourceMappingURL=style.css.map */
