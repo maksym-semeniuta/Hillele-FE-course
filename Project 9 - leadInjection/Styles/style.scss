@@ -1,0 +1,458 @@
+$lime: #EAFEEC;
+$light-lime: #F1FFF8;
+$green: #38CEA8;
+$red: #F72A2A;
+$black: #000000;
+$light-black: #212D32;
+$light-blue: #376474;
+$dark-blue:#20414D;
+$white: #FFFFFF;
+
+@mixin flex($fd, $ai, $jc){
+    display: flex;
+    align-items: $ai;
+    flex-direction: $fd;
+    justify-content: $jc;
+}
+
+@mixin Roboto($fw, $fs, $lh){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+.head{
+    @include flex(initial, center, space-around);
+    background-color: $lime;
+    padding: 20px 0 20px 0;
+    span{
+        @include Roboto(400, 24px, 32px )
+    }
+}
+.social {
+    @include flex(initial, center, initial);
+    gap: 1vw;
+}
+.navigation{
+    @include flex(initial, center, space-around);
+    background-color: $light-lime;
+    padding: 20px 0 20px 0;
+    .menu{
+        @include flex(initial, center, initial);
+        gap: 1vw;
+        li{
+            @include Roboto(400, 16px, 24px);
+        }
+    }
+    .contacts{
+        @include flex(initial, center, initial);
+        gap: 1vw;
+        a{
+            @include Roboto(400, 16px, 24px); 
+            color: $dark-blue;
+        }
+    }
+}
+.promo{
+    background: url("../Images/promo.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0 200px 13vw;
+}
+.callToAction{
+    @include flex(column,flex-start ,initial);
+    gap: 2vh;
+    width: 40vw;
+    &__title{
+        @include Roboto(500,48px ,56px );
+        color: $light-black;
+    }
+    &__subtitle{
+        @include Roboto(500,48px ,56px );
+        color: $light-blue;
+    }
+    &__text{
+        @include Roboto(400,16px ,24px );
+        color: $light-blue;
+    }
+}
+.btnBox{
+    @include flex(initial, center , space-around );
+    gap: 1vw;
+    &__btn{
+        border: none;
+        border-radius: 32px;
+        padding: 16px 32px;
+        color: $white;
+        &--red{
+            background-color: $red;
+        }
+        &--green{
+            background-color: $green;
+        }
+    }
+}
+.howItWorks{
+    @include flex(column,center ,initial );
+    gap: 2vh;
+    padding: 40px 60px 10px;
+    &__title{
+        @include Roboto(500, 48px , 56px );
+        color: $light-black;
+    }
+    &__text{
+        @include Roboto(400, 24px , 32px );
+        color: $light-blue;
+    }
+    &__conteiner{
+        @include flex(initial, flex-start ,space-between );
+        gap: 10px;
+        .number{
+            @include Roboto(500, 48px , 56px );
+            color: $green;
+        }
+    }
+}
+.card{
+    @include flex(column, flex-start ,initial );
+    flex-wrap: wrap;
+    gap: 1vh;
+    &__title{
+        @include Roboto(700, 20px , 32px );
+        color: $dark-blue;
+    }
+    &__subtitle, &__text{
+        @include Roboto(400, 16px , 24px );
+        color: $dark-blue;
+    }
+}
+.btn{
+    @include Roboto(400, 16px ,24px );
+    padding: 8px 32px;
+    border: 2px solid $green;
+    background-color: $white;
+    color: $green;
+    border-radius: 24px;
+    &--white{
+        color: $white;
+        background-color: $green;
+        border: 2px solid $white;
+        padding: 8px 32px;
+        border-radius: 24px;
+    }
+    
+}
+.offer{
+    background: url("../Images/big-preview\ 1.png") no-repeat;
+    background-size: 100%;
+    padding: 2vh;
+    ul{
+        @include flex(initial, center ,space-around );
+        .cards{
+            max-width: 380px;
+            background: $white;
+            border-radius: 10px;
+            
+            &__card{
+                @include flex(column, center ,initial);
+                padding: 16px;
+                gap: 1vh;
+                border-bottom: 10px solid $green;
+                border-radius: 10px;
+                
+                .img{
+                    border-radius: 10px;
+                }
+                .title{
+                    @include Roboto(400, 24px ,32px );
+                    color: $light-blue
+                }
+                .subtitle, .text{
+                    color: $light-blue;
+                }
+            }
+        }
+    }
+}
+.success{
+    @include flex(initial, initial, space-between);
+    padding: 30px 60px;
+    flex-wrap: wrap;
+    &__story{
+        @include flex(column,initial ,initial );
+        gap: 3vh;
+        width: 60%;
+    }
+    &__title{
+        @include Roboto(400, 48px , 56px );
+        color: $green;
+    }
+    &__subtitle{
+        @include Roboto(400, 24px ,32px );
+        color: $light-black;
+    }
+    &__text{
+        @include Roboto(400, 16px ,24px );
+        color: $light-black;
+    }
+    &__img{
+        max-width: 400px;
+        border-radius: 10px;
+        border: 2px solid $green;
+    }
+}
+hr{
+    border-radius: 10px;
+    border: 4px solid $green;
+    width: 90%;
+}
+.testimony{
+    @include flex(initial,initial, initial );
+    padding: 20px 60px;
+    gap: 10vw;
+    flex-wrap: wrap
+}
+.face{
+    @include flex(initial,flex-start, initial );
+    gap: 3vw;
+    .photo{
+        border-radius: 50%;
+    }
+}
+.case{
+    &__info{
+        @include flex(column,initial ,initial );
+        gap: 1vh;
+    }
+    &__text{
+        @include Roboto(400,16px ,24px );
+        width: 280px;
+    }
+    &__list{
+        @include flex(initial,flex-start, initial );
+        li{
+            padding-right: 1vw;
+        }
+    }
+}
+.infoConteiner{
+    @include flex(initial, flex-start , initial );
+    gap: 1vw;
+    &__title{
+        @include Roboto(500, 18px , 24px );
+        color: $black;
+        &--green{
+            color: $green;
+        }
+    }
+    &__text{
+        @include Roboto(400, 16px , 24px );
+        color: $green;
+    }
+}
+.arrows{
+    @include flex(initial,initial ,space-between );
+    padding: 3vh 60px;
+}   
+.testimony{
+    &--right{
+        @include flex(initial, initial ,flex-end );
+    }
+}
+.include{
+    background: $light-lime;
+    padding: 20px 60px;
+    margin: 40px 0;
+    &__conteiner{
+        @include flex(initial,center ,space-between );
+    }
+    &__title{
+        @include Roboto(400,48px ,56px );
+        color: $light-black;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+    &__subtitle{
+        @include Roboto(400,24px ,32px );
+        text-align: center;
+        color: $light-black;
+        padding-bottom: 3vh;
+    }
+    &__option{
+        @include flex(column,center ,initial );
+        gap: 2vh;
+    }
+}
+.option{
+    &__title{
+        @include Roboto(500, 22px , 24px );
+        color: $light-black;
+    }
+    &__text{
+        @include Roboto(400, 16px , 24px );
+        color: $light-blue;
+        text-align: center;
+    }
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid $green;
+    th{
+        padding: 40px;
+        border: 1px solid $green;
+    }
+}
+.columnTitle{
+    @include flex(column, center ,initial )
+}
+
+
+.questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10vw;
+    row-gap: 10vh;
+    padding: 40px 60px;
+}
+.question{
+    display: flex;
+    gap: 2vw;
+    img{
+        max-height: 64px;
+
+    }
+    &__discription{
+        @include flex(column, flex-start ,initial );
+        gap: 1vh
+    }
+    &__title{
+        @include Roboto(400,24px ,32px );
+        color: $light-black;
+    }
+    &__text{
+        @include Roboto(400,16px ,24px );
+        color: $light-black;
+    }
+}
+.subscribe{
+    background: url("../Images/depositphotos_202281534-stock-photo-mixed-fruits-white-background\ 1.png") no-repeat;
+    background-size: 100%;
+    padding: 50px 0 50px 13vw;
+}
+.form{
+    @include flex(column, flex-start, initial );
+    gap: 1vh;
+    width: 30vw;
+    padding: 50px 70px;
+    background: $white;
+    border-radius: 10px;
+    &__title{
+        @include Roboto(400, 24px , 32px );
+        color: $green;
+    }
+    &__subtitle{
+        @include Roboto(400, 16px , 24px );
+        color: $dark-blue;
+        padding-bottom: 20px;
+    }
+    &__text{
+        @include Roboto(400, 12px , 18px );
+        color: $light-black;
+    }
+    &__btn{
+        @include flex(initial,center ,space-between );
+        gap: 2vw;
+        .btn{
+            background-color: $green;
+            padding: 8px 32px;
+            @include Roboto(400, 16px , 24px );
+            color: $white;
+        }
+        .text{
+            @include Roboto(400, 9px , 24px );
+        }
+    }
+    &__input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 100px;
+        border: 1px solid #888282;
+        background: #F0E9E9;
+    }
+}
+.coaches{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2vh;
+}
+.coach{
+    padding: 30px 70px;
+    &__title{
+        @include Roboto(500, 48px , 56px );
+        text-align: center;
+    }
+    &__subtitle{
+        @include Roboto(400, 24px , 32px );
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+}
+.start{
+    &__conteiner{
+    background: $green;
+    @include flex(inline, center ,center );
+    gap: 2vw;
+    padding: 60px 60px;
+    }
+    &__text{
+        @include Roboto(700, 24px , 32px );
+        color: $white;
+    }
+}
+.footer{
+    @include flex(initial,center ,space-around );
+    padding: 10px 70px;
+    .footer1{
+        width: 20vw;
+        @include flex(column,flex-start ,space-around );
+        gap: 2vh;
+        &__text{
+            @include Roboto(400, 12px , 14px );
+            color: $light-black;
+            &--black{
+                color: $black;
+            }
+        }
+    }
+    .menu{
+        @include flex(column,flex-start ,initial);
+        &__title{
+            @include Roboto(400, 16px , 24px );
+        }
+        li{
+            @include Roboto(400, 16px , 35px );
+        }
+    }
+}
+.table {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: none;
+    color: $light-black;
+  }
+  
+  .cell {
+    @include Roboto(400, 16px , 24px );
+    border: 1px solid #6377DD;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light-black;
+    p{
+        @include Roboto(300, 58px , 58px );
+    }
+  }
